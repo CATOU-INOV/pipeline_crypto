@@ -1,0 +1,161 @@
+[2025-10-19T17:14:49.953+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:14:49.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:14:49.961+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:14:49.960+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:14:50.669+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:14:50.688+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:14:50.688+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:14:50.701+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:14:50.701+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:14:50.712+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.769 seconds
+[2025-10-19T17:15:21.247+0000] {processor.py:161} INFO - Started process (PID=209) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:21.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:15:21.249+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:21.249+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:21.394+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:21.430+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:21.429+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:15:21.437+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:21.437+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:15:21.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.274 seconds
+[2025-10-19T17:15:51.588+0000] {processor.py:161} INFO - Started process (PID=220) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:51.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:15:51.591+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:51.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:51.752+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:15:51.764+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:51.764+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:15:51.772+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:15:51.772+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:15:51.779+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.199 seconds
+[2025-10-19T17:16:21.860+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:21.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:16:21.862+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:21.861+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:21.981+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:21.991+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:21.991+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:16:21.998+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:21.998+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:16:22.003+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.148 seconds
+[2025-10-19T17:16:52.126+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:52.127+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:16:52.129+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:52.128+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:52.250+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:16:52.260+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:52.260+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:16:52.267+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:16:52.267+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:16:52.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.153 seconds
+[2025-10-19T17:17:22.429+0000] {processor.py:161} INFO - Started process (PID=265) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:22.429+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:17:22.430+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:22.430+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:22.561+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:22.572+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:22.572+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:17:22.579+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:22.579+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:17:22.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.159 seconds
+[2025-10-19T17:17:52.662+0000] {processor.py:161} INFO - Started process (PID=276) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:52.663+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:17:52.665+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:52.665+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:52.796+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:17:52.807+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:52.807+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:17:52.814+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:17:52.814+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:17:52.891+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.233 seconds
+[2025-10-19T17:18:22.934+0000] {processor.py:161} INFO - Started process (PID=287) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:22.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:18:22.936+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:22.936+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:23.063+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:23.073+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:23.073+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:18:23.080+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:23.080+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:18:23.085+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.156 seconds
+[2025-10-19T17:18:53.207+0000] {processor.py:161} INFO - Started process (PID=298) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:53.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:18:53.209+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:53.209+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:53.338+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:18:53.349+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:53.349+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:18:53.356+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:18:53.356+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:18:53.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.159 seconds
+[2025-10-19T17:19:23.441+0000] {processor.py:161} INFO - Started process (PID=309) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:23.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:19:23.445+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:23.444+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:23.576+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:23.587+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:23.586+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:19:23.594+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:23.594+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:19:23.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.163 seconds
+[2025-10-19T17:19:53.768+0000] {processor.py:161} INFO - Started process (PID=320) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:53.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:19:53.770+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:53.770+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:53.899+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:19:53.909+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:53.909+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:19:53.916+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:19:53.916+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:19:53.921+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.158 seconds
+[2025-10-19T17:20:23.984+0000] {processor.py:161} INFO - Started process (PID=331) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:23.985+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:20:23.987+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:23.986+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:24.128+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:24.139+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:24.139+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:20:24.147+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:24.147+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:20:24.220+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.241 seconds
+[2025-10-19T17:20:54.242+0000] {processor.py:161} INFO - Started process (PID=342) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:54.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:20:54.244+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:54.244+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:54.372+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:20:54.384+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:54.384+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:20:54.392+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:20:54.392+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:20:54.398+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.159 seconds
+[2025-10-19T17:21:24.558+0000] {processor.py:161} INFO - Started process (PID=353) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:24.558+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:21:24.559+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:24.559+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:24.709+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:24.720+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:24.720+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:21:24.727+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:24.727+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:21:24.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.179 seconds
+[2025-10-19T17:21:54.771+0000] {processor.py:161} INFO - Started process (PID=364) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:54.771+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:21:54.772+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:54.772+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:54.884+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:21:54.895+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:54.894+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:21:54.902+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:21:54.902+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:21:54.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.140 seconds
+[2025-10-19T17:22:25.108+0000] {processor.py:161} INFO - Started process (PID=375) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:25.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:22:25.110+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:25.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:25.244+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:25.254+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:25.254+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:22:25.262+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:25.262+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:22:25.268+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.165 seconds
+[2025-10-19T17:22:55.335+0000] {processor.py:161} INFO - Started process (PID=386) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:55.335+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:22:55.337+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:55.336+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:55.468+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:22:55.478+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:55.478+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:22:55.486+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:22:55.486+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:22:55.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.244 seconds
+[2025-10-19T17:23:25.648+0000] {processor.py:161} INFO - Started process (PID=397) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:25.649+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:23:25.650+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:25.650+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:25.787+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:25.798+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:25.798+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:23:25.806+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:25.806+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:23:25.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.168 seconds
+[2025-10-19T17:23:55.858+0000] {processor.py:161} INFO - Started process (PID=408) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:55.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:23:55.860+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:55.860+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:55.979+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:23:55.989+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:55.989+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:23:55.996+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:23:55.996+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:23:56.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.150 seconds
+[2025-10-19T17:24:26.106+0000] {processor.py:161} INFO - Started process (PID=419) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:26.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:24:26.109+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:26.108+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:26.236+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:26.247+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:26.247+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:24:26.254+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:26.254+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:24:26.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.159 seconds
+[2025-10-19T17:24:56.379+0000] {processor.py:161} INFO - Started process (PID=430) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:56.380+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:24:56.381+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:56.381+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:56.502+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:24:56.513+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:56.513+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:24:56.521+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:24:56.521+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:24:56.599+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.225 seconds
+[2025-10-19T17:25:26.639+0000] {processor.py:161} INFO - Started process (PID=441) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:26.640+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:25:26.642+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:26.641+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:26.806+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:26.817+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:26.817+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:25:26.900+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:26.900+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:25:26.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.272 seconds
+[2025-10-19T17:25:56.933+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:56.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/daily_crypto_analysis_dag.py for tasks to queue
+[2025-10-19T17:25:56.935+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:56.934+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:57.052+0000] {processor.py:840} INFO - DAG(s) 'daily_crypto_analysis' retrieved from /opt/airflow/dags/daily_crypto_analysis_dag.py
+[2025-10-19T17:25:57.063+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:57.063+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-19T17:25:57.070+0000] {logging_mixin.py:188} INFO - [2025-10-19T17:25:57.070+0000] {dag.py:3947} INFO - Setting next_dagrun for daily_crypto_analysis to 2025-10-19 06:00:00+00:00, run_after=2025-10-20 06:00:00+00:00
+[2025-10-19T17:25:57.076+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/daily_crypto_analysis_dag.py took 0.147 seconds

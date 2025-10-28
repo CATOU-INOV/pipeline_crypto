@@ -1,0 +1,21 @@
+
+=== RAPPORT QUOTIDIEN CRYPTO ===
+Date : 2025-10-21
+Enregistrements traités : 2252
+Cryptos analysées : 51
+Cryptos en hausse continue : 2
+
+Fichiers générés :
+- /opt/airflow/reports/crypto_report_2025-10-21.csv
+- /opt/airflow/reports/volume_chart_2025-10-21.png
+- /opt/airflow/reports/price_chart_2025-10-21.png
+- /opt/airflow/reports/volatility_chart_2025-10-21.png
+
+Top 5 cryptos par volume :
+crypto_id  total_volume
+   tether 4732024710874
+  bitcoin 2923490803592
+ ethereum 1490820413101
+ usd-coin  486479971927
+   solana  256997098548
+================================

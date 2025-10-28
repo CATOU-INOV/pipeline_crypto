@@ -1,0 +1,21 @@
+[2025-10-19T17:16:04.686+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-19T17:16:04.697+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_crypto_analysis.calculate_stats manual__2025-10-19T17:16:02.603651+00:00 [queued]>
+[2025-10-19T17:16:04.699+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_crypto_analysis.calculate_stats manual__2025-10-19T17:16:02.603651+00:00 [queued]>
+[2025-10-19T17:16:04.699+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-19T17:16:04.704+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): calculate_stats> on 2025-10-19 17:16:02.603651+00:00
+[2025-10-19T17:16:04.707+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-19T17:16:04.707+0000] {standard_task_runner.py:64} INFO - Started process 231 to run task
+[2025-10-19T17:16:04.707+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'daily_crypto_analysis', 'calculate_stats', 'manual__2025-10-19T17:16:02.603651+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/daily_crypto_analysis_dag.py', '--cfg-path', '/tmp/tmp5kdfm6ru']
+[2025-10-19T17:16:04.708+0000] {standard_task_runner.py:91} INFO - Job 28: Subtask calculate_stats
+[2025-10-19T17:16:04.713+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-19T17:16:04.725+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_crypto_analysis.calculate_stats manual__2025-10-19T17:16:02.603651+00:00 [running]> on host 5af3e7dc6317
+[2025-10-19T17:16:04.754+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_crypto_analysis' AIRFLOW_CTX_TASK_ID='calculate_stats' AIRFLOW_CTX_EXECUTION_DATE='2025-10-19T17:16:02.603651+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-19T17:16:02.603651+00:00'
+[2025-10-19T17:16:04.755+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-19T17:16:04.764+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/daily_crypto_analysis_dag.py:46 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-10-19T17:16:04.849+0000] {daily_crypto_analysis_dag.py:88} INFO - 💾 Stats quotidiennes insérées pour 2025-10-19
+[2025-10-19T17:16:04.850+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-19T17:16:04.850+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-19T17:16:04.854+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_crypto_analysis, task_id=calculate_stats, run_id=manual__2025-10-19T17:16:02.603651+00:00, execution_date=20251019T171602, start_date=20251019T171604, end_date=20251019T171604
+[2025-10-19T17:16:04.890+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-19T17:16:04.900+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-19T17:16:04.900+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

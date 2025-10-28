@@ -1,0 +1,20 @@
+[2025-10-16T17:06:18.434+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-16T17:06:18.445+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_crypto_analysis.check_data manual__2025-10-16T00:00:00+00:00 [queued]>
+[2025-10-16T17:06:18.447+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_crypto_analysis.check_data manual__2025-10-16T00:00:00+00:00 [queued]>
+[2025-10-16T17:06:18.447+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-16T17:06:18.451+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): check_data> on 2025-10-16 00:00:00+00:00
+[2025-10-16T17:06:18.454+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=606) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-16T17:06:18.455+0000] {standard_task_runner.py:64} INFO - Started process 608 to run task
+[2025-10-16T17:06:18.455+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'daily_crypto_analysis', 'check_data', 'manual__2025-10-16T00:00:00+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/daily_crypto_analysis_dag.py', '--cfg-path', '/tmp/tmpy9kw6i52']
+[2025-10-16T17:06:18.456+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask check_data
+[2025-10-16T17:06:18.461+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-16T17:06:18.473+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_crypto_analysis.check_data manual__2025-10-16T00:00:00+00:00 [running]> on host 6845f55d4275
+[2025-10-16T17:06:18.499+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_crypto_analysis' AIRFLOW_CTX_TASK_ID='check_data' AIRFLOW_CTX_EXECUTION_DATE='2025-10-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-16T00:00:00+00:00'
+[2025-10-16T17:06:18.500+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-16T17:06:18.507+0000] {daily_crypto_analysis_dag.py:35} INFO - ✅ 2054 lignes de données présentes pour 2025-10-16
+[2025-10-16T17:06:18.507+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-16T17:06:18.507+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-16T17:06:18.591+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_crypto_analysis, task_id=check_data, run_id=manual__2025-10-16T00:00:00+00:00, execution_date=20251016T000000, start_date=20251016T170618, end_date=20251016T170618
+[2025-10-16T17:06:18.598+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-16T17:06:18.607+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-16T17:06:18.607+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

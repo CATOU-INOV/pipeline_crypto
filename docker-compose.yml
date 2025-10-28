@@ -1,0 +1,193 @@
+version: "3.8"
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+    networks:
+      - crypto_network
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INTERNAL:PLAINTEXT,EXTERNAL:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: INTERNAL://kafka:29092,EXTERNAL://localhost:9092
+      KAFKA_LISTENERS: INTERNAL://0.0.0.0:29092,EXTERNAL://0.0.0.0:9092
+      KAFKA_INTER_BROKER_LISTENER_NAME: INTERNAL
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+    networks:
+      - crypto_network
+    command:
+      - bash
+      - -c
+      - |
+        echo "🚀 Attente de Zookeeper..."
+        cub zk-ready zookeeper 2181 20
+        echo "✅ Zookeeper prêt, démarrage de Kafka"
+        /etc/confluent/docker/run &
+        pid=$!
+        
+        # Attente active de Kafka avant création des topics
+        until kafka-topics --bootstrap-server kafka:29092 --list >/dev/null 2>&1; do
+          echo "⏳ Attente de Kafka..."
+          sleep 2
+        done
+        
+        echo "🪶 Kafka prêt, création des topics..."
+        kafka-topics --create --topic crypto-prices --partitions 3 --replication-factor 1 --if-not-exists --bootstrap-server kafka:29092
+        kafka-topics --create --topic crypto-processed --partitions 2 --replication-factor 1 --if-not-exists --bootstrap-server kafka:29092
+        kafka-topics --create --topic crypto-alerts --partitions 1 --replication-factor 1 --if-not-exists --bootstrap-server kafka:29092
+        kafka-topics --create --topic dead-letter-queue --partitions 1 --replication-factor 1 --if-not-exists --bootstrap-server kafka:29092
+        
+        wait $pid
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: cryptowatch_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - crypto_network
+
+  airflow-init:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: airflow-init
+    depends_on:
+      - postgres
+    environment:
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/cryptowatch_db
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: 'False'
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/reports:/opt/airflow/reports
+    entrypoint:
+      - /bin/bash
+      - -c
+      - |
+        airflow db init
+        airflow users create \
+          --username admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com \
+          --password admin
+        tail -f /dev/null
+    networks:
+      - crypto_network
+
+  airflow-webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: airflow-webserver
+    restart: always
+    depends_on:
+      - airflow-init
+      - postgres
+      - kafka
+    environment:
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/cryptowatch_db
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/reports:/opt/airflow/reports
+    command: webserver
+    networks:
+      - crypto_network
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    container_name: airflow-scheduler
+    restart: always
+    depends_on:
+      - airflow-init
+      - postgres
+      - kafka
+    environment:
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/cryptowatch_db
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/reports:/opt/airflow/reports
+    command: scheduler
+    networks:
+      - crypto_network
+
+  crypto-producer:
+    build:
+      context: ./producers
+      dockerfile: Dockerfile
+    container_name: crypto-producer
+    depends_on:
+      - kafka
+    environment:
+      BROKER: kafka:29092
+    networks:
+      - crypto_network
+
+  crypto-consumer:
+    build:
+      context: ./consumers
+      dockerfile: Dockerfile
+    container_name: crypto-consumer
+    depends_on:
+      - kafka
+      - postgres
+    environment:
+      KAFKA_BROKER: kafka:29092
+      KAFKA_TOPIC_INPUT: crypto-prices
+      KAFKA_TOPIC_ALERTS: crypto-alerts
+      KAFKA_TOPIC_DLQ: dead-letter-queue
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: cryptowatch_db
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      BATCH_SIZE: 50
+      BATCH_TIMEOUT: 10
+    networks:
+      - crypto_network
+    command: python3 /app/price_processor.py
+
+volumes:
+  postgres_data:
+
+networks:
+  crypto_network:
+    driver: bridge

@@ -1,0 +1,109 @@
+[2025-10-16T16:44:13.692+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-16T16:44:13.712+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: crypto_pipeline.fetch_crypto_data scheduled__2025-10-16T15:00:00+00:00 [queued]>
+[2025-10-16T16:44:13.715+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: crypto_pipeline.fetch_crypto_data scheduled__2025-10-16T15:00:00+00:00 [queued]>
+[2025-10-16T16:44:13.715+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-16T16:44:13.720+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): fetch_crypto_data> on 2025-10-16 15:00:00+00:00
+[2025-10-16T16:44:13.723+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=201) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-16T16:44:13.723+0000] {standard_task_runner.py:64} INFO - Started process 202 to run task
+[2025-10-16T16:44:13.723+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'crypto_pipeline', 'fetch_crypto_data', 'scheduled__2025-10-16T15:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/crypto_pipeline.py', '--cfg-path', '/tmp/tmphrwb7ix_']
+[2025-10-16T16:44:13.724+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask fetch_crypto_data
+[2025-10-16T16:44:13.730+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-16T16:44:13.748+0000] {task_command.py:426} INFO - Running <TaskInstance: crypto_pipeline.fetch_crypto_data scheduled__2025-10-16T15:00:00+00:00 [running]> on host 6845f55d4275
+[2025-10-16T16:44:13.783+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='crypto_pipeline' AIRFLOW_CTX_TASK_ID='fetch_crypto_data' AIRFLOW_CTX_EXECUTION_DATE='2025-10-16T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-16T15:00:00+00:00'
+[2025-10-16T16:44:13.784+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-16T16:44:13.984+0000] {logging_mixin.py:188} INFO - [
+  {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "name": "Bitcoin",
+    "image": "https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400",
+    "current_price": 108283,
+    "market_cap": 2154842319668,
+    "market_cap_rank": 1,
+    "fully_diluted_valuation": 2154842319668,
+    "total_volume": 77816678781,
+    "high_24h": 111758,
+    "low_24h": 107840,
+    "price_change_24h": -2442.6447869151016,
+    "price_change_percentage_24h": -2.20603,
+    "market_cap_change_24h": -53755138754.59009,
+    "market_cap_change_percentage_24h": -2.4339,
+    "circulating_supply": 19934406.0,
+    "total_supply": 19934406.0,
+    "max_supply": 21000000.0,
+    "ath": 126080,
+    "ath_change_percentage": -14.36306,
+    "ath_date": "2025-10-06T18:57:42.558Z",
+    "atl": 67.81,
+    "atl_change_percentage": 159128.06096,
+    "atl_date": "2013-07-06T00:00:00.000Z",
+    "roi": null,
+    "last_updated": "2025-10-16T16:43:13.933Z"
+  },
+  {
+    "id": "ethereum",
+    "symbol": "eth",
+    "name": "Ethereum",
+    "image": "https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628",
+    "current_price": 3902.43,
+    "market_cap": 470103041969,
+    "market_cap_rank": 2,
+    "fully_diluted_valuation": 470103041969,
+    "total_volume": 43696138870,
+    "high_24h": 4068.79,
+    "low_24h": 3872.91,
+    "price_change_24h": -84.10804116372128,
+    "price_change_percentage_24h": -2.1098,
+    "market_cap_change_24h": -11487954239.500671,
+    "market_cap_change_percentage_24h": -2.38542,
+    "circulating_supply": 120698786.3547597,
+    "total_supply": 120698786.3547597,
+    "max_supply": null,
+    "ath": 4946.05,
+    "ath_change_percentage": -21.52755,
+    "ath_date": "2025-08-24T19:21:03.333Z",
+    "atl": 0.432979,
+    "atl_change_percentage": 896314.55177,
+    "atl_date": "2015-10-20T00:00:00.000Z",
+    "roi": {
+      "times": 47.19807167725224,
+      "currency": "btc",
+      "percentage": 4719.807167725224
+    },
+    "last_updated": "2025-10-16T16:43:14.209Z"
+  },
+  {
+    "id": "tether",
+    "symbol": "usdt",
+    "name": "Tether",
+    "image": "https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661",
+    "current_price": 1.001,
+    "market_cap": 181465995741,
+    "market_cap_rank": 3,
+    "fully_diluted_valuation": 181465995741,
+    "total_volume": 134689643153,
+    "high_24h": 1.001,
+    "low_24h": 1.001,
+    "price_change_24h": -0.000103016927066601,
+    "price_change_percentage_24h": -0.01029,
+    "market_cap_change_24h": 701789382,
+    "market_cap_change_percentage_24h": 0.38823,
+    "circulating_supply": 181329989227.5298,
+    "total_supply": 181329989227.5298,
+    "max_supply": null,
+    "ath": 1.32,
+    "ath_change_percentage": -24.36203,
+    "ath_date": "2018-07-24T00:00:00.000Z",
+    "atl": 0.572521,
+    "atl_change_percentage": 74.79926,
+    "atl_date": "2015-03-02T00:00:00.000Z",
+    "roi": null,
+    "last_updated": "2025-10-16T16:43:16.002Z"
+  }
+]
+[2025-10-16T16:44:13.985+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-16T16:44:13.985+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-16T16:44:13.994+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=crypto_pipeline, task_id=fetch_crypto_data, run_id=scheduled__2025-10-16T15:00:00+00:00, execution_date=20251016T150000, start_date=20251016T164413, end_date=20251016T164413
+[2025-10-16T16:44:14.031+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-16T16:44:14.043+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-16T16:44:14.044+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,46 @@
+[2025-10-23T17:12:12.756+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-23T17:12:12.766+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_crypto_analysis_test.generate_market_report scheduled__2025-10-22T01:00:00+00:00 [queued]>
+[2025-10-23T17:12:12.769+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_crypto_analysis_test.generate_market_report scheduled__2025-10-22T01:00:00+00:00 [queued]>
+[2025-10-23T17:12:12.769+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 4
+[2025-10-23T17:12:12.772+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): generate_market_report> on 2025-10-22 01:00:00+00:00
+[2025-10-23T17:12:12.775+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=289) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-23T17:12:12.775+0000] {standard_task_runner.py:64} INFO - Started process 291 to run task
+[2025-10-23T17:12:12.775+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'daily_crypto_analysis_test', 'generate_market_report', 'scheduled__2025-10-22T01:00:00+00:00', '--job-id', '57', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp7y_l7w3a']
+[2025-10-23T17:12:12.776+0000] {standard_task_runner.py:91} INFO - Job 57: Subtask generate_market_report
+[2025-10-23T17:12:12.781+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-10-23T17:12:12.792+0000] {task_command.py:426} INFO - Running <TaskInstance: daily_crypto_analysis_test.generate_market_report scheduled__2025-10-22T01:00:00+00:00 [running]> on host a329f6591830
+[2025-10-23T17:12:12.821+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_crypto_analysis_test' AIRFLOW_CTX_TASK_ID='generate_market_report' AIRFLOW_CTX_EXECUTION_DATE='2025-10-22T01:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-22T01:00:00+00:00'
+[2025-10-23T17:12:12.821+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-23T17:12:12.829+0000] {logging_mixin.py:188} WARNING - /opt/***/dags/test.py:322 UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+[2025-10-23T17:12:12.834+0000] {test.py:326} INFO - 📄 CSV généré : /opt/***/reports/crypto_report_2025-10-23.csv
+[2025-10-23T17:12:12.918+0000] {test.py:343} INFO - 📊 Graphique volume généré : /opt/***/reports/volume_chart_2025-10-23.png
+[2025-10-23T17:12:12.981+0000] {test.py:358} INFO - 📊 Graphique prix généré : /opt/***/reports/price_chart_2025-10-23.png
+[2025-10-23T17:12:13.030+0000] {test.py:373} INFO - 📊 Graphique volatilité généré : /opt/***/reports/volatility_chart_2025-10-23.png
+[2025-10-23T17:12:13.045+0000] {test.py:402} INFO - 
+=== RAPPORT QUOTIDIEN CRYPTO ===
+Date : 2025-10-23
+Enregistrements traités : 101
+Cryptos analysées : 50
+Cryptos en hausse continue : 2
+
+Fichiers générés :
+- /opt/***/reports/crypto_report_2025-10-23.csv
+- /opt/***/reports/volume_chart_2025-10-23.png
+- /opt/***/reports/price_chart_2025-10-23.png
+- /opt/***/reports/volatility_chart_2025-10-23.png
+
+Top 5 cryptos par volume :
+crypto_id  total_volume
+   tether  226817116556
+  bitcoin  188631177685
+ ethereum   73055840864
+ usd-coin   24699798628
+   solana   14237209814
+================================
+
+[2025-10-23T17:12:13.048+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-23T17:12:13.048+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-23T17:12:13.053+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=daily_crypto_analysis_test, task_id=generate_market_report, run_id=scheduled__2025-10-22T01:00:00+00:00, execution_date=20251022T010000, start_date=20251023T171212, end_date=20251023T171213
+[2025-10-23T17:12:13.079+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-23T17:12:13.087+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-10-23T17:12:13.088+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
